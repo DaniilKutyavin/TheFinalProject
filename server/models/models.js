@@ -35,7 +35,7 @@ const Event = sequelize.define('event', {
     url:{type: DataTypes.STRING},
     regform:{type: DataTypes.STRING},
     price:{type: DataTypes.INTEGER, allowNull: false},
-    date_time:{type: DataTypes.DATE, allowNull: false},
+    date_time:{type: DataTypes.STRING, allowNull: false},
     locate:{type: DataTypes.STRING, allowNull: false},
     coordinates:{type: DataTypes.STRING, allowNull: false},
     time_start:{type: DataTypes.TIME, allowNull: false},
