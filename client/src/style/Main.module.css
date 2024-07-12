@@ -1,0 +1,168 @@
+/* Main.css */
+
+/* Reset default margins and paddings */
+
+  /* Main container styling */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 350px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    min-height: calc(150% - 120px);
+    max-height: calc(300% - 120px);
+
+  }
+  
+  /* Sidebar header styling */
+  .sidebarhead {
+    position: sticky; /* Фиксированная позиция для верхней части */
+    top: 0; /* Прикрепляем к верху экрана */
+    background-color: #f0f0f0; /* Цвет фона для верхней части */
+    z-index: 1; /* Установка z-index для обеспечения видимости над другими элементами */
+    padding: 10px; /* Отступы для контента внутри верхней части */
+    color: white; /* Make the text color white */
+  }
+  
+  /* Logo styling */
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .logo-img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .city, .date {
+    margin: 5px 0;
+  }
+  
+  /* Search input styling */
+  .search {
+    width: calc(100% - 20px); /* Ширина поля поиска, учитывая внутренние отступы */
+    padding: 10px; /* Внутренние отступы для поля поиска */
+    margin-bottom: 10px; /* Отступ снизу поля поиска */
+    border: 1px solid #ccc; /* Граница для поля поиска */
+    border-radius: 5px; /* Закругление углов для поля поиска */
+  }
+  
+  /* Hidden elements */
+  .search-results, .event {
+    margin-bottom: 10px;
+  }
+  
+  /* Event type list and rows */
+  .types-list, .types-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Event type items */
+  .event-type {
+    width: calc(33% - 5px);
+    /* Разделение на два столбца с небольшим отступом */
+    margin-bottom: 10px;
+  }
+  
+  /* Event type content */
+  .event-type-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px
+  }
+  
+  /* Circle styling */
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    /* Меньший отступ между кружками и надписями */
+}
+  
+  /* Event type name styling */
+  .event-type-name {
+    font-size: 14px;
+  }
+  
+  /* Map styling */
+  .map {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .event-type-count {
+    font-size: 20px;
+    font-weight: light;
+    color: #fff;
+}
+
+p.event-type-name {
+    text-align: center;
+}
+
+.category-list {
+  min-height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+
+
+  scrollbar-width: thin; 
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #f0f0f0; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 4px; 
+}
+
+.popup {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; 
+  margin: -10px;
+}
+
+.popupImage {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.popupContent {
+  flex-grow: 1;
+}
+
+.popupTitle {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popupContent p {
+  margin: 2px 0;
+}

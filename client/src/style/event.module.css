@@ -1,0 +1,235 @@
+
+.pageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../image/backgroundcirclesblur.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    height: 90vh; 
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .mainContent {
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+  
+  .mainContent h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    width: 80%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .time {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #tire {
+    margin: 0 10px;
+  }
+  
+  .map {
+    width: 40%;
+    height: calc(100% - 40px);
+    margin: 20px 20px 20px 0;
+    overflow-y: auto;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    border: none;
+    background: #c471ed;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background: #f64f59;
+  }
+  
+  /* Custom scrollbar styles */
+  .mainContent::-webkit-scrollbar,
+  .map::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .mainContent::-webkit-scrollbar-thumb,
+  .map::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .mainContent::-webkit-scrollbar-thumb:hover,
+  .map::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .mainContent::-webkit-scrollbar-track,
+  .map::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  .contentWrap {
+    flex: 1;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+ 
+  
+  
+  .contentWrap::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .contentWrap::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .contentWrap::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .contentWrap::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .pageTitle {
+    font-size: 24px; /* Adjust title size */
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .eventBl {
+    margin-bottom: 20px; /* Space between event blocks */
+    border: 1px solid #ccc; /* Optional: Add border for each event block */
+    border-radius: 5px;
+    overflow: hidden; /* Ensure content within doesn't overflow */
+  }
+  
+  .eventContent {
+    display: flex; /* Ensure image and info are side by side */
+  }
+  
+  .eventImage {
+    flex: 0 0 30%; /* Adjust width of image column */
+    max-width: 30%;
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  .eventImage img {
+    width: 100%; /* Make sure image takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+  }
+  
+  .eventInfo {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Add padding inside the event info */
+  }
+  
+  .eventInfo p {
+    margin-bottom: 8px; /* Space between paragraphs */
+  }
+  
+  .eventInfo strong {
+    font-weight: bold; /* Ensure strong text is bold */
+  }
+
+  .profileTitle {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputField,
+  .textArea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .textArea {
+    height: 100px;
+    resize: none;
+  }
+  

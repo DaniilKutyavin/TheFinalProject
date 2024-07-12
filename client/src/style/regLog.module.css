@@ -1,0 +1,105 @@
+
+.container {
+    background-image: url("../image/backgroundcircle3dblur.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.logo {
+    margin-bottom: 0px;
+    /* Additional logo styles */
+}
+
+@font-face {
+    font-family: LifeTree Font;
+    /* Define font-face styles */
+}
+
+.kaleidoscope {
+    position: absolute;
+    font-family: 'LifeTree Font';
+    font-size: 380px;
+    color: #dddddd;
+}
+
+#kal1 {
+    left: 0;
+    top: 0;
+    margin-top: -120px;
+}
+
+#kal2 {
+    right: 0;
+    bottom: 0;
+    margin-bottom: -120px;
+}
+
+.logincontainer {
+    padding: 50px;
+    width: 400px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: gray;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.27);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.formfield {
+    margin-bottom: 20px;
+}
+
+.formfieldlabel {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formfieldinput {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formbutton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #c471ed;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formbutton:hover {
+    background: #f64f59;
+}
+
+@media (min-width: 1920px) {
+    .kaleidoscope {
+        font-size: 440px;
+    }
+
+    #kal1 {
+        margin-right: -600px;
+    }
+
+    #kal2 {
+        margin-right: -100px;
+    }
+}
+

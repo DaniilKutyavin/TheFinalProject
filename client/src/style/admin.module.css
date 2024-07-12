@@ -1,0 +1,17 @@
+
+.adminContainer {
+    padding: 20px;
+}
+
+.adminContainer form {
+    margin-bottom: 20px;
+}
+
+.adminContainer input {
+    margin-right: 10px;
+}
+
+.adminContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
