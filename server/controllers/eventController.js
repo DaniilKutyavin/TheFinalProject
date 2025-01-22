@@ -109,6 +109,15 @@ class EventController {
             next(ApiError.badRequest(e.message));
         }
     }
+    async fetchActiveEventsByType(req, res, next) {
+        try {
+            const { typeId } = req.params; // Получение typeId из параметров маршрута
+            const events = await EventService.fetchActiveEventsByType(typeId);
+            return res.json(events);
+        } catch (e) {
+            next(ApiError.badRequest(e.message));
+        }
+    }
 }
 
 module.exports = new EventController();

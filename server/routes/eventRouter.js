@@ -27,5 +27,5 @@ router.post('/unregister',
 router.get('/user/active/:userId', authMiddleware, EventController.fetchActiveEventsForUser);
 router.get('/user/archived/:userId', authMiddleware, EventController.fetchArchivedEventsForUser);
 router.get('/registrations/:id', EventController.fetchEventRegistrations);
-
+router.get('/active-with-types/:typeId', EventController.fetchActiveEventsByType);
 module.exports = router;

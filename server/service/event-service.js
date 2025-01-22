@@ -10,7 +10,7 @@ class EventService {
         let fileName = uuid.v4() + ".jpg";
         photo.mv(path.resolve(__dirname, '..', 'static', fileName));
         const event = await Event.create({ title, description, photo: fileName, price, date_time, locate, coordinates, time_start, time_end, organizerId, typeId,capacity, capacityAll });
-        return event;
+        return event; 
     }
 
     async getEventById(id) {
@@ -192,7 +192,29 @@ class EventService {
         });
         return events;
     }
+    async fetchActiveEventsByType(typeId) {
+        const currentDate = new Date();
+        const currentTime = `${currentDate.getHours()}:${currentDate.getMinutes()}`;
     
+        const events = await Event.findAll({
+            where: {
+                typeId,
+                [Op.and]: [
+                    { date_time: { [Op.gte]: currentDate } },
+                    { 
+                        [Op.or]: [
+                            { date_time: { [Op.gt]: currentDate } }, 
+                            {  
+                                date_time: currentDate, 
+                                time_start: { [Op.gte]: currentTime } 
+                            }
+                        ]
+                    }
+                ]
+            }
+        });
+        return events;
+    }
 }
 
 module.exports = new EventService();
